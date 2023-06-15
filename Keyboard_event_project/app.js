@@ -3,10 +3,6 @@ function showKeyCode (e) {
 
     insert.innerHTML = ''
 
-
-
-
-
     const keycodes = {
         'e.key' : e.key === ' ' ? 'Space' : e.key,
         'e.keyCode': e.keyCode,
@@ -16,6 +12,8 @@ function showKeyCode (e) {
         const div = document.createElement('div')
         div.className = 'key'
         const small = document.createElement('small')
+        small.style.color = 'white'
+        small.style.backgroundColor = 'red'
 
         const keyText = document.createTextNode(key)
         const value = document.createTextNode(keycodes[key])
